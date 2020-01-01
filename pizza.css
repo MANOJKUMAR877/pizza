@@ -1,1 +1,197 @@
 
+#heading{
+  padding-left: 150px;
+  padding-top: 30px;
+  color:rgb(27, 86, 197);
+  font-size:35px;
+  
+    
+}
+.container{
+  border:1px solid black;
+  width: 600px;
+  height: 300px;
+  margin-left: 60px;
+  
+}
+
+#small{
+  margin-left: 250px;
+  font-size: 18px;
+  display: inline-block;
+  
+}
+#medium{
+  
+  margin-left: 251px;
+    font-size: 18px;
+    margin-top: 0px;
+  
+
+}
+#large{
+  margin-left: 250px;
+  font-size: 18px;
+}
+.pizza{
+ 
+  color: rgb(27, 86, 197);
+  position: relative;
+
+}
+#xs{
+  position: absolute;
+  left:225px;
+  top:20px;
+}
+#sm{
+  position: absolute;
+  left:225px;
+  top:60px;
+}
+#lg{
+  position: absolute;
+  left:225px;
+  top:100px;
+}
+.adult{
+  height:150px;
+  
+  padding-top: 36px;
+  padding-left:10px ;
+  font-size: 22px;
+  color: rgb(27, 86, 197);
+}
+.child{
+    
+  padding-bottom: 15px;
+  padding-left:8px ;
+  color:rgb(27, 86, 197);
+  position:absolute;
+  font-size: 22px;
+  top:340px;
+}
+
+.order-total{
+  position: absolute;
+  top:380px;
+  left:100px;
+  color: rgb(27, 86, 197);
+}
+
+.total{
+  border: 1px ;
+  width: 30px;
+  height: 22px;
+  
+  position: absolute;
+  top:400;
+  left:550;
+  font-size: 25px;
+}
+
+#smallvalue{
+  position: absolute;
+  top: 85px;
+  margin-left: 551px;
+  display: inline-block;
+}
+#mediumvalue{
+  position: absolute;
+  top: 126px;
+  margin-left: 550px;
+}
+#largevalue{
+  position: absolute;
+  top: 168px;
+  margin-left: 550px;
+}
+
+#adultvalue{
+  position: absolute;
+  top: 244px;
+  margin-left: 550px;
+}
+#childvalue{
+  position: absolute;
+  top: 340px;
+  margin-left: 550px;
+}
+.icons{
+  position: relative;
+}
+#small-minus{
+  position: absolute;;
+  left: 502px;
+  bottom: 263px;
+  color:rgb(81, 81, 185);
+  display:inline-block;
+
+}
+#small-plus{
+  position: absolute;
+  left: 582px;
+  bottom: 263px;
+  color: red;
+  display: inline-block;
+}
+#medium-minus{
+  position: absolute;
+  left: 502px;
+  bottom: 222px;
+  color:rgb(81, 81, 185);
+  display: inline-block;
+}
+#medium-plus{
+  position: absolute;
+  left: 582px;
+  bottom: 222px;
+  color: red;
+  display: inline-block;
+}
+#large-minus{
+  position: absolute;
+  left: 501px;
+  bottom: 176px;
+  color:rgb(81, 81, 185);
+  display: inline-block;
+}
+#large-plus{
+  position: absolute;
+  left: 582px;
+  bottom: 176px;
+  color: red;
+  display: inline-block;
+}
+#adult-minus{
+  position: absolute;
+  left: 501px;
+    bottom: 100px;
+    color:rgb(81, 81, 185);
+  display: inline-block;
+}
+#adult-plus{
+  position: absolute;
+  left: 582px;
+  bottom:100px;
+  color: red;
+  display: inline-block;
+}
+#child-minus{
+  position: absolute;
+  left: 501px;
+  bottom:7px;
+  color:rgb(81, 81, 185);
+  display: inline-block;
+}
+#child-plus{
+  position: absolute;
+  left: 582px;
+  bottom:7px;
+  color: red;
+  display: inline-block;
+ 
+}
+#small-pizza{
+  display:inline-block;
+}
