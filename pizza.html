@@ -1,1 +1,80 @@
 
+<html>
+<div class="overall">
+
+    <head>
+        <title>
+            Pizza shop
+        </title>
+        <i id="heading" class="fas fa-shopping-cart"> Order<strong> Pizza</strong></i>
+    </head>
+
+    <body class="body">
+
+        <div class="container">
+            <div class="pizza">
+                <div style="font-size: 0.8rem;">
+                    <div class="small-pizza">
+                        <i id="xs" class="fas fa-pizza-slice fa-xs "></i>
+                        <h3 id="small">SMALL</h3>
+                    </div>
+                    <div class="medium-pizza">
+                        <i id="sm" class="fas fa-pizza-slice fa-sm "></i>
+                        <h3 id="medium">MEDIUM</h3>
+
+                    </div>
+                    <div class="large-pizza">
+                        <i id="lg" class="fas fa-pizza-slice fa-lg "></i>
+                        <h3 id="large">LARGE</h3>
+
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="adult">
+                <i id="adult-icon" class="fas fa-user-alt"> ADULT</i>
+                <hr id="line">
+            </div>
+
+
+            <div class="child">
+
+                <i id="child-icon" class="fas fa-child"> CHILD</i>
+            </div>
+            <div class="order-total">
+                <h2> ORDER TOTAL</h2>
+            </div>
+            <div class="total">
+                200
+            </div>
+        </div>
+        <div class="icons">
+            <i id="small-minus" class="fas fa-minus-circle fa-2x" onclick="smallpizzaDecrement()"></i>
+            <i id="small-plus" class="fas fa-plus-circle fa-2x" onclick="smallpizzaIncrement()"></i>
+            <i id="medium-minus" class="fas fa-minus-circle fa-2x" onclick="mediumpizzaDecrement()"></i>
+            <i id="medium-plus" class="fas fa-plus-circle fa-2x" onclick="mediumpizzaIncrement()"></i>
+            <i id="large-minus" class="fas fa-minus-circle fa-2x" onclick="largepizzaDecrement()"></i>
+            <i id="large-plus" class="fas fa-plus-circle fa-2x" onclick="largepizzaIncrement()"></i>
+            <i id="adult-minus" class="fas fa-minus-circle fa-2x" onclick="adultDecrement()"></i>
+            <i id="adult-plus" class="fas fa-plus-circle fa-2x" onclick="adultIncrement()"></i>
+            <i id="child-minus" class="fas fa-minus-circle fa-2x" onclick="childDecrement()"></i>
+            <i id="child-plus" class="fas fa-plus-circle fa-2x" onclick="childIncrement()"></i>
+        </div>
+        <h2><span id="smallvalue">0</span></h2>
+
+        <h2><span id="mediumvalue">1<span></h2>
+
+        <h2><span id="largevalue">0</span></h2>
+
+        <h2><span id="adultvalue">1</span></h2>
+
+        <h2><span id="childvalue">0</span></h2<>
+    </body>
+    <script src="pizza.js">
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="pizza.css">
+    <script src="https://kit.fontawesome.com/df4d605c7d.js" crossorigin="anonymous"></script>
+</div>
+
+</html>
