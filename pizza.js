@@ -1,4 +1,3 @@
-
 let smallpizza = 0;
 let mediumpizza = 1;
 let largepizza = 0;
@@ -55,6 +54,15 @@ function smallpizzaIncrement() {
         }
         if (totalamount >= 450 && mediumpizza == 0) {
             document.querySelector("#medium-minus").style.color = "#898fe7";
+            document.querySelector("#large-minus").style.color = "#898fe7";
+            document.querySelector("#adult-minus").style.color = "#898fe7";
+
+        }
+        if (totalamount >= 500 && adult == 1) {
+            document.querySelector("#adult-minus").style.color = "#898fe7";
+        }
+        if (totalamount >= 600 && large == 2) {
+            document.querySelector("#large-minus").style.color = "blue";
         }
     }
 
@@ -160,6 +168,7 @@ function largepizzaIncrement() {
         adult = adult + 2;
         document.querySelector("#adultvalue").innerHTML = adult;
         colorIncrement();
+
         if (totalamount >= 500 && smallpizza == 0 & child == 0) {
             document.querySelector("#child-minus").style.color = "#898fe7";
             document.querySelector("#small-minus").style.color = "#898fe7";
@@ -167,6 +176,8 @@ function largepizzaIncrement() {
         if (totalamount >= 900 && mediumpizza == 0) {
             document.querySelector("#medium-minus").style.color = "#898fe7";
         }
+
+
     }
 }
 function adultDecrement() {
@@ -188,7 +199,19 @@ function adultDecrement() {
         document.querySelector("#adultvalue").innerHTML = adult;
         document.querySelector("#mediumvalue").innerHTML = mediumpizza;
         colorDecrement();
-
+        if (totalamount >= 300 && smallpizza == 0) {
+            document.querySelector("#medium-minus").style.color = "#898fe7";
+        }
+        if (totalamount >= 600 && smallpizza == 0) {
+            document.querySelector("#medium-minus").style.color = "#898fe7";
+        }
+        if (totalamount >= 500 && smallpizza == 0) {
+            document.querySelector("#medium-minus").style.color = "blue";
+        }
+        if (totalamount >= 800 && smallpizza == 0) {
+            document.querySelector("#large-plus").style.color = "#ea9494";
+            document.querySelector("#medium-minus").style.color = "blue";
+        }
 
     }
 }
@@ -216,6 +239,13 @@ function adultIncrement() {
         if (totalamount >= 500 && smallpizza == 0 && child == 0) {
             document.querySelector("#small-minus").style.color = "#898fe7";
             document.querySelector("#child-minus").style.color = "#898fe7";
+        }
+        if (totalamount >= 600 && mediumpizza == 0) {
+            document.querySelector("#medium-minus").style.color = "#898fe7"
+        }
+        if (totalamount >= 300 && mediumpizza == 0 && smallpizza == 0 && child == 0) {
+
+            document.querySelector("#small-minus").style.color = "#898fe7";
         }
 
 
@@ -250,6 +280,14 @@ function childDecrement() {
         colorDecrement();
         if (child == 0) {
             document.querySelector("#child-minus").style.color = "#898fe7"
+        }
+        if (totalamount >= 800 && largepizza == 2) {
+            document.querySelector("#large-plus").style.color = "#ea9494";
+            document.querySelector("#small-minus").style.color = "#898fe7";
+        }
+        if (totalamount >= 750 && mediumpizza == 0) {
+            document.querySelector("#medium-minus").style.color = "#898fe7";
+            document.querySelector("#large-plus").style.color = "#ea9494";
         }
 
     }
@@ -291,6 +329,9 @@ function childIncrement() {
         }
         if (totalamount >= 500 && adult == 1) {
             document.querySelector("#adult-minus").style.color = "#898fe7";
+        }
+        if (totalamount >= 600 && mediumpizza == 0) {
+            document.querySelector("#medium-minus").style.color = "#898fe7";
         }
     }
 }
